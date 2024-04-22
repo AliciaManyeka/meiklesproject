@@ -1,0 +1,520 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.banner {
+  background: dimgray;
+  width: 100%;
+  height: 60vh;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+.banner nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner nav .hamburger {
+  height: 30px;
+  width: 30px;
+  border: 2px solid brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.banner nav .hamburger .line {
+  height: 2px;
+  width: 70%;
+  background: brown;
+}
+.banner .pc-nav {
+  display: none;
+}
+
+.why {
+  padding: 3rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.why .container .row .US img {
+  width: 100%;
+}
+.why .container .row .US .why-us {
+  display: flex;
+  background: transparent;
+  justify-content: space-around;
+  margin-top: -2rem;
+}
+.why .container .row .US .why-us .card {
+  height: 8rem;
+  width: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: brown;
+  border-radius: 0;
+  border: 2px solid white;
+}
+.why .container .row .US .why-us .card:hover {
+  transition: 2s;
+  scale: 1.5;
+  background-color: white;
+  color: brown;
+  border-radius: 3px;
+  border: 2px solid brown;
+}
+.why .container .row .US .why-us .card:hover p {
+  color: brown;
+}
+.why .container .row .US .why-us p {
+  color: white;
+  font-weight: 700;
+}
+.why .container .Text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.why .container .Text h2 {
+  color: brown;
+  font-weight: 900;
+  font-size: 19px;
+}
+.why .container .Text p {
+  line-height: 1.2rem;
+  font-size: 17px;
+}
+.why .container .Text .text {
+  font-weight: 600;
+}
+.why .container .Text .text .paragraph {
+  color: brown;
+}
+.why .container .Text .text .paragraph P {
+  line-height: 2rem;
+}
+.why .container .Text .btn {
+  background: transparent;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0;
+  padding: 5px 20px;
+  border: 3px solid brown;
+}
+.why .container .Text .btn a {
+  color: brown;
+  font-weight: 600;
+  text-decoration: none;
+}
+.why .container .Text .btn:hover {
+  background-color: brown;
+  border-radius: 6px;
+}
+.why .container .Text .btn:hover a {
+  color: white;
+}
+
+#projects {
+  padding: 3rem 0;
+  color: white;
+}
+#projects .container .row .text-container {
+  display: flex;
+  background-color: brown;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 50px;
+}
+#projects .container .row .text-container p {
+  line-height: 1.2rem;
+}
+#projects .container .row .text-container .text h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+#projects .container .row .image-container .images :hover {
+  transition: all 2s;
+  scale: 1.06;
+  color: brown;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgb(70, 67, 67);
+  background-blend-mode: overlay;
+}
+#projects .container .row .image-container .images :hover p {
+  background-color: transparent;
+  color: brown;
+  display: flex;
+  align-self: center;
+}
+#projects .container .row .image-container .images {
+  display: flex;
+}
+#projects .container .row .image-container .images .image-text1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: baseline;
+  text-align: start;
+  width: 250px;
+  height: 240px;
+  border: 1px solid brown;
+  background-size: cover;
+  background-image: url("../images/project 1.jpg");
+}
+#projects .container .row .image-container .images .image-text1 p {
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+#projects .container .row .image-container .images .image-text2 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: baseline;
+  text-align: start;
+  width: 250px;
+  height: 240px;
+  border: 1px solid brown;
+  background-size: cover;
+  background-image: url("../images/project 2.jpg");
+}
+#projects .container .row .image-container .images .image-text2 p {
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+#projects .container .row .image-container .images .image-text3 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: baseline;
+  text-align: start;
+  width: 250px;
+  height: 240px;
+  border: 1px solid brown;
+  background-size: cover;
+  background-image: url("../images/project 3.jpg");
+}
+#projects .container .row .image-container .images .image-text3 p {
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+#projects .container .row .image-container .images .image-text4 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: baseline;
+  text-align: start;
+  width: 250px;
+  height: 240px;
+  background-size: cover;
+  border: 1px solid brown;
+  background-image: url("../images/project 4.jpg");
+}
+#projects .container .row .image-container .images .image-text4 p {
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+#projects .container .row .image-container .images .image-text5 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: baseline;
+  text-align: start;
+  width: 250px;
+  height: 240px;
+  background-size: cover;
+  border: 1px solid brown;
+  background-image: url("../images/project 5.jpg");
+}
+#projects .container .row .image-container .images .image-text5 p {
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+#projects .container .row .image-container .images .image-text6 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: baseline;
+  text-align: start;
+  width: 250px;
+  height: 240px;
+  background-size: cover;
+  background-image: url("../images/project 6.jpg");
+  border: 1px solid brown;
+}
+#projects .container .row .image-container .images .image-text6 p {
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.donate {
+  background-image: url("../images/donate.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  margin-top: 5%;
+}
+.donate .overlay {
+  background-color: rgba(0, 0, 0, 0.682);
+  height: 100%;
+  color: white;
+  flex-direction: column;
+  display: flex;
+  padding: 30px;
+  justify-content: space-around;
+}
+.donate .overlay .donate-text h2 {
+  font-size: 30px;
+  font-weight: 900;
+  width: 50%;
+  padding-bottom: 3%;
+}
+.donate .overlay .donate-buttons {
+  display: flex;
+  gap: 50px;
+}
+.donate .overlay input {
+  height: 3rem;
+  background-color: transparent;
+  padding: 20px;
+  border: 2px white solid;
+  color: white;
+  width: 35%;
+}
+.donate .overlay input:hover {
+  transition: all 0.4s;
+  scale: 1.05;
+}
+.donate .overlay button {
+  height: 3rem;
+  width: 9rem;
+  border: none;
+  color: white;
+  background-color: brown;
+}
+.donate .overlay button:hover {
+  background-color: white;
+  color: brown;
+  border: 2px brown solid;
+}
+
+.TEXT {
+  padding: 40px;
+}
+.TEXT .container {
+  border: 1px solid brown;
+  padding: 50px;
+}
+.TEXT .container .lorem {
+  text-align: center;
+  line-height: 2rem;
+}
+.TEXT .container .lorem-heading {
+  text-align: center;
+  padding: 20px;
+}
+.TEXT .container .lorem-heading h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: brown;
+}
+.footer .container {
+  color: white;
+  padding: 50px;
+}
+.footer .container .row .alicia .footer-text p {
+  line-height: 1.2rem;
+  width: 80%;
+}
+.footer .container .row .alicia .dots-container {
+  display: flex;
+  gap: 30px;
+  padding-top: 5px;
+}
+.footer .container .row .alicia .dots-container .licia {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding-top: 10px;
+}
+.footer .container .row .alicia .dots-container .licia .footer-dots {
+  padding-bottom: 10px;
+  gap: 5px;
+  align-items: center;
+  display: flex;
+}
+.footer .container .row .alicia .dots-container .licia .footer-dots #donate {
+  padding-left: 90px;
+}
+.footer .container .row .alicia .dots-container .licia .footer-dots .dot {
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background-color: black;
+  border: 3px solid white;
+}
+.footer .container .links {
+  gap: 20px;
+}
+.footer .container .links a {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  color: white;
+  text-decoration: none;
+}
+.footer .container .links h2 {
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+.footer .container .join h3 {
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.footer .container .join img {
+  height: 6vh;
+  width: 5vw;
+}
+
+/*
+
+
+
+
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .banner {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+  }
+  .banner .mobile-nav {
+    display: none;
+  }
+  .banner .container {
+    width: 100%;
+    height: 15vh;
+    align-content: center;
+  }
+  .banner .container .pc-nav {
+    display: block;
+    display: flex;
+    background: white;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .banner .container .pc-nav .nav-icons {
+    width: 3rem;
+    height: 3rem;
+    background: brown;
+  }
+  .banner .container .pc-nav .center {
+    width: 80%;
+  }
+  .banner .container .pc-nav .center ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .banner .container .pc-nav .center ul a {
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  .banner .container .pc-nav .center ul a img {
+    height: 2rem;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
