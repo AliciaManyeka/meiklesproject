@@ -175,7 +175,7 @@ table {
 }
 .why .container .Text .btn a {
   color: brown;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
 }
 .why .container .Text .btn:hover {
@@ -198,6 +198,7 @@ table {
   padding: 50px;
 }
 #projects .container .row .text-container p {
+  font: 20px;
   line-height: 1.5rem;
 }
 #projects .container .row .text-container .text h2 {
@@ -205,7 +206,11 @@ table {
   font-weight: bold;
 }
 #projects .container .row .text-container .text p {
+  font-size: 20px;
   line-height: 2rem;
+}
+#projects .container .row .image-container .images p {
+  font-size: 20px;
 }
 #projects .container .row .image-container .images :hover {
   transition: all 2s;
@@ -391,6 +396,7 @@ table {
   text-align: center;
 }
 .TEXT .container .lorem p {
+  font-size: 20p;
   line-height: 1.5rem;
 }
 .TEXT .container .lorem-heading {
@@ -410,7 +416,8 @@ table {
   padding: 50px;
 }
 .footer .container .row .alicia .footer-text p {
-  line-height: 1.2rem;
+  font-size: 20px;
+  line-height: 1.5rem;
   width: 80%;
 }
 .footer .container .row .alicia .dots-container {
@@ -461,8 +468,7 @@ table {
   padding-bottom: 20px;
 }
 .footer .container .join img {
-  height: 6vh;
-  width: 5vw;
+  height: 90px;
 }
 
 /*
