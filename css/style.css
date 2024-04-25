@@ -100,7 +100,6 @@ table {
   font-size: 20px;
   font-weight: 600;
 }
-
 .why {
   padding: 3rem 0;
   width: 100%;
@@ -209,6 +208,9 @@ table {
   font-size: 20px;
   line-height: 2rem;
 }
+#projects .container .row .image-container .images {
+  transition: all 2s ease-in-out;
+}
 #projects .container .row .image-container .images p {
   font-size: 20px;
 }
@@ -220,12 +222,24 @@ table {
   font-weight: bold;
   background-color: rgb(70, 67, 67);
   background-blend-mode: overlay;
+  transition: all 2s ease-in-out;
+  transform: translateY(-20px);
+  border: 3px solid;
+  border-radius: 10%;
 }
 #projects .container .row .image-container .images :hover p {
   background-color: transparent;
   color: brown;
+  border: none;
   display: flex;
   align-self: center;
+  font-size: 30PX;
+  font-weight: bold;
+  transition: ease-in 3s;
+  transform: translateY(-120);
+}
+#projects .container .row .image-container .images :hover img:hover {
+  transition: all ease-in-out 2s;
 }
 #projects .container .row .image-container .images {
   display: flex;
@@ -240,6 +254,7 @@ table {
   width: 250px;
   height: 240px;
   border: 1px solid brown;
+  transition: all ease-in-out 2s;
   background-size: cover;
   background-image: url("../images/project 1.jpg");
 }
@@ -254,6 +269,7 @@ table {
   justify-content: end;
   align-items: baseline;
   text-align: start;
+  transition: all ease-in-out 2s;
   width: 250px;
   height: 240px;
   border: 1px solid brown;
@@ -273,6 +289,7 @@ table {
   text-align: start;
   width: 250px;
   height: 240px;
+  transition: all ease-in-out 2s;
   border: 1px solid brown;
   background-size: cover;
   background-image: url("../images/project 3.jpg");
@@ -289,6 +306,7 @@ table {
   align-items: baseline;
   text-align: start;
   width: 250px;
+  transition: all ease-in-out 2s;
   height: 240px;
   background-size: cover;
   border: 1px solid brown;
@@ -303,6 +321,7 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: all ease-in-out 2s;
   align-items: baseline;
   text-align: start;
   width: 250px;
@@ -323,6 +342,7 @@ table {
   align-items: baseline;
   text-align: start;
   width: 250px;
+  transition: all ease-in-out 2s;
   height: 240px;
   background-size: cover;
   background-image: url("../images/project 6.jpg");
@@ -358,7 +378,7 @@ table {
 }
 .donate .overlay .donate-buttons {
   display: flex;
-  gap: 50px;
+  gap: 10px;
 }
 .donate .overlay input {
   height: 3rem;
@@ -366,15 +386,10 @@ table {
   padding: 20px;
   border: 2px white solid;
   color: white;
-  width: 35%;
-}
-.donate .overlay input:hover {
-  transition: all 0.4s;
-  scale: 1.05;
+  width: 100%;
 }
 .donate .overlay button {
-  height: 3rem;
-  width: 9rem;
+  padding: 10px;
   border: none;
   color: white;
   background-color: brown;
@@ -390,7 +405,7 @@ table {
 }
 .TEXT .container {
   border: 1px solid brown;
-  padding: 50px;
+  padding: 30px;
 }
 .TEXT .container .lorem {
   text-align: center;
