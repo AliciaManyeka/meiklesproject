@@ -3,8 +3,8 @@
    License: none (public domain)
 */
 @font-face {
-  font-family: "Jost-Medium";
-  src: url("../Jost/Jost-VariableFont_wght.ttf");
+  font-family: "jost";
+  src: url("../Jost/static/Jost-Medium.ttf");
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -56,8 +56,10 @@ table {
   border-spacing: 0;
 }
 
-* {
-  font-family: "Jost-Medium";
+body {
+  font-family: "jost";
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .banner {
@@ -71,6 +73,7 @@ table {
   background-blend-mode: overlay;
 }
 .banner nav {
+  margin-top: 10px;
   width: 100%;
   height: 10vh;
   display: flex;
@@ -93,7 +96,11 @@ table {
   background: brown;
 }
 .banner .pc-nav {
+  margin-top: 10px;
   display: none;
+}
+.banner .pc-nav .centre {
+  padding-top: 10px;
 }
 .banner .pc-nav .centre ul a {
   color: brown;
@@ -116,8 +123,8 @@ table {
   margin-top: -2rem;
 }
 .why .container .row .US .why-us .card {
-  height: 8rem;
-  width: 9rem;
+  height: 10rem;
+  width: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,11 +196,14 @@ table {
   padding: 3rem 0;
   color: white;
 }
+#projects .container .row {
+  background-color: pink;
+}
 #projects .container .row .text-container {
   display: flex;
   background-color: brown;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   padding: 50px;
 }
 #projects .container .row .text-container p {
@@ -208,38 +218,11 @@ table {
   font-size: 20px;
   line-height: 2rem;
 }
-#projects .container .row .image-container .images {
-  transition: all 2s ease-in-out;
+#projects .container .row .image-container {
+  padding: 0px;
 }
 #projects .container .row .image-container .images p {
   font-size: 20px;
-}
-#projects .container .row .image-container .images :hover {
-  transition: all 2s;
-  scale: 1.06;
-  color: brown;
-  font-size: 30px;
-  font-weight: bold;
-  background-color: rgb(70, 67, 67);
-  background-blend-mode: overlay;
-  transition: all 2s ease-in-out;
-  transform: translateY(-20px);
-  border: 3px solid;
-  border-radius: 10%;
-}
-#projects .container .row .image-container .images :hover p {
-  background-color: transparent;
-  color: brown;
-  border: none;
-  display: flex;
-  align-self: center;
-  font-size: 30PX;
-  font-weight: bold;
-  transition: ease-in 3s;
-  transform: translateY(-120);
-}
-#projects .container .row .image-container .images :hover img:hover {
-  transition: all ease-in-out 2s;
 }
 #projects .container .row .image-container .images {
   display: flex;
@@ -251,10 +234,9 @@ table {
   justify-content: end;
   align-items: baseline;
   text-align: start;
-  width: 250px;
-  height: 240px;
+  width: 70vw;
+  height: 40vh;
   border: 1px solid brown;
-  transition: all ease-in-out 2s;
   background-size: cover;
   background-image: url("../images/project 1.jpg");
 }
@@ -269,9 +251,8 @@ table {
   justify-content: end;
   align-items: baseline;
   text-align: start;
-  transition: all ease-in-out 2s;
-  width: 250px;
-  height: 240px;
+  width: 70vw;
+  height: 40vh;
   border: 1px solid brown;
   background-size: cover;
   background-image: url("../images/project 2.jpg");
@@ -287,9 +268,8 @@ table {
   justify-content: end;
   align-items: baseline;
   text-align: start;
-  width: 250px;
-  height: 240px;
-  transition: all ease-in-out 2s;
+  width: 70vw;
+  height: 40vh;
   border: 1px solid brown;
   background-size: cover;
   background-image: url("../images/project 3.jpg");
@@ -305,9 +285,8 @@ table {
   justify-content: end;
   align-items: baseline;
   text-align: start;
-  width: 250px;
-  transition: all ease-in-out 2s;
-  height: 240px;
+  width: 60vw;
+  height: 40vh;
   background-size: cover;
   border: 1px solid brown;
   background-image: url("../images/project 4.jpg");
@@ -321,11 +300,10 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  transition: all ease-in-out 2s;
   align-items: baseline;
   text-align: start;
-  width: 250px;
-  height: 240px;
+  width: 60vw;
+  height: 40vh;
   background-size: cover;
   border: 1px solid brown;
   background-image: url("../images/project 5.jpg");
@@ -341,9 +319,8 @@ table {
   justify-content: end;
   align-items: baseline;
   text-align: start;
-  width: 250px;
-  transition: all ease-in-out 2s;
-  height: 240px;
+  width: 60vw;
+  height: 40vh;
   background-size: cover;
   background-image: url("../images/project 6.jpg");
   border: 1px solid brown;
@@ -359,6 +336,7 @@ table {
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
+  width: 100%;
   margin-top: 5%;
 }
 .donate .overlay {
@@ -367,14 +345,13 @@ table {
   color: white;
   flex-direction: column;
   display: flex;
-  padding: 30px;
   justify-content: space-around;
 }
-.donate .overlay .donate-text h2 {
-  font-size: 30px;
-  font-weight: 900;
-  width: 50%;
-  padding-bottom: 3%;
+.donate .overlay .donate-text .you {
+  font-size: 35px;
+  font-weight: bold;
+  width: 45%;
+  padding-bottom: 8%;
 }
 .donate .overlay .donate-buttons {
   display: flex;
@@ -386,7 +363,7 @@ table {
   padding: 20px;
   border: 2px white solid;
   color: white;
-  width: 100%;
+  width: 35%;
 }
 .donate .overlay button {
   padding: 10px;
@@ -411,7 +388,7 @@ table {
   text-align: center;
 }
 .TEXT .container .lorem p {
-  font-size: 20p;
+  font-size: 20px;
   line-height: 1.5rem;
 }
 .TEXT .container .lorem-heading {
@@ -424,26 +401,37 @@ table {
 }
 
 .footer {
+  display: flex;
   background-color: brown;
 }
 .footer .container {
   color: white;
-  padding: 50px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .container .row {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .container .row .alicia .footer-text {
+  width: 100%;
 }
 .footer .container .row .alicia .footer-text p {
   font-size: 20px;
   line-height: 1.5rem;
-  width: 80%;
+  width: 85%;
+  opacity: 75%;
 }
 .footer .container .row .alicia .dots-container {
-  display: flex;
-  gap: 30px;
+  gap: 15px;
   padding-top: 5px;
 }
 .footer .container .row .alicia .dots-container .licia {
-  -moz-column-gap: 30px;
-       column-gap: 30px;
   padding-top: 10px;
+}
+.footer .container .row .alicia .dots-container .licia .footer-text p {
+  width: 100%;
 }
 .footer .container .row .alicia .dots-container .licia .footer-dots {
   padding-bottom: 10px;
@@ -451,20 +439,22 @@ table {
   align-items: center;
   display: flex;
 }
-.footer .container .row .alicia .dots-container .licia .footer-dots #donate {
-  padding-left: 90px;
+.footer .container .row .alicia .dots-container .licia .footer-dots p {
+  font-size: 20px;
 }
 .footer .container .row .alicia .dots-container .licia .footer-dots .dot {
-  height: 9px;
-  width: 9px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   background-color: black;
-  border: 3px solid white;
+  border: 6px solid white;
 }
 .footer .container .links {
   gap: 20px;
+  padding-top: 20px;
 }
 .footer .container .links a {
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
@@ -477,13 +467,17 @@ table {
   font-weight: 800;
   padding-bottom: 20px;
 }
+.footer .container .join {
+  padding-top: 20px;
+}
 .footer .container .join h3 {
   font-size: 25px;
   font-weight: 700;
   padding-bottom: 20px;
 }
 .footer .container .join img {
-  height: 90px;
+  height: 60px;
+  width: 70px;
 }
 
 /*
@@ -509,6 +503,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .banner {
     background-image: url("../images/banner.jpg");
     background-size: cover;
+    height: 100vh;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
   }
@@ -516,24 +511,24 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     display: none;
   }
   .banner .container {
+    padding-top: 10px;
     width: 100%;
-    height: 15vh;
     align-content: center;
   }
   .banner .container .pc-nav {
     display: block;
     display: flex;
+    height: 8vh;
+    width: 100%;
     background: white;
-    height: -moz-fit-content;
-    height: fit-content;
   }
   .banner .container .pc-nav .nav-icons {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 100%;
     background: brown;
   }
   .banner .container .pc-nav .center {
-    width: 80%;
+    width: 100%;
   }
   .banner .container .pc-nav .center ul {
     display: flex;
@@ -547,7 +542,119 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     color: brown;
   }
   .banner .container .pc-nav .center ul a img {
-    height: 2rem;
+    height: 3rem;
+  }
+  .why .container {
+    padding: 4rem 0;
+  }
+  .why .container .row {
+    gap: 0px;
+  }
+  .why .container .row .US img {
+    height: 55vh;
+  }
+  .why .container .row .US .why-us .card:hover {
+    transition: 2s;
+    scale: 1.2;
+    background-color: white;
+    color: brown;
+    border-radius: 3px;
+    border: 2px solid brown;
+  }
+  .why .container .row .US .why-us .card:hover p {
+    color: brown;
+  }
+  .why .container .row .US .TEXT {
+    padding-top: 0rem;
+  }
+  #projects .container {
+    padding: 50px 0;
+  }
+  #projects .container .row {
+    background-color: pink;
+    height: 70vh;
+  }
+  #projects .container .row .text-container .text .me {
+    padding-bottom: 2rem;
+  }
+  #projects .container .row .image-container .images {
+    transition: all 2s ease-in-out;
+  }
+  #projects .container .row .image-container .images p {
+    font-size: 20px;
+  }
+  #projects .container .row .image-container .images :hover {
+    transition: all 2s;
+    scale: 1.06;
+    color: brown;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(70, 67, 67);
+    background-blend-mode: overlay;
+    transition: all 2s ease-in-out;
+    transform: translateY(-20px);
+    border: 3px solid;
+    border-radius: 10%;
+  }
+  #projects .container .row .image-container .images :hover p {
+    background-color: transparent;
+    color: brown;
+    border: none;
+    display: flex;
+    align-self: center;
+    font-size: 30PX;
+    font-weight: bold;
+    transition: ease-in 3s;
+    transform: translateY(-120);
+  }
+  #projects .container .row .image-container .images :hover img:hover {
+    transition: all ease-in-out 2s;
+  }
+  .donate {
+    margin: 2rem 0;
+    height: 90vh;
+  }
+  .donate .donate-text .you {
+    width: 45%;
+  }
+  .donate input {
+    height: 3rem;
+    background-color: transparent;
+    padding: 20px;
+    border: 3px white solid;
+    color: white;
+    width: 35%;
+  }
+  .TEXT {
+    margin: 60px 0;
+  }
+  .TEXT .container {
+    padding: 5rem;
+  }
+  .footer {
+    margin-top: 8rem;
+  }
+  .footer .footer-text {
+    padding-top: 20px;
+  }
+  .footer .dots-container {
+    display: flex;
+  }
+  .footer .dots-container .footer-dots {
+    padding-bottom: 10px;
+    gap: 5px;
+    align-items: center;
+    display: flex;
+  }
+  .footer .dots-container .footer-dots p {
+    font-size: 20px;
+  }
+  .footer .dots-container .footer-dots .dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: black;
+    border: 6px solid white;
   }
 }
 /* Large devices (desktops, 992px and up) */

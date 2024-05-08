@@ -3,9 +3,14 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+// @font-face {
+//     font-family: "jost";
+//     src: url("../Jost/static/Jost-LightItalic.ttf");
+// }
+
 @font-face {
-    font-family: 'Jost-Medium';
-    src: url("../Jost/Jost-VariableFont_wght.ttf");
+    font-family: "jost";
+    src: url("../Jost/static/Jost-Medium.ttf");
 }
 
 html, body, div, span, applet, object, iframe,
@@ -51,8 +56,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-*{
-    font-family: 'Jost-Medium';
+body{
+    font-family: 'jost';
+    font-size: 20px;
+    font-weight: 500;
 }
 
 
@@ -74,6 +81,7 @@ table {
     // navigation bar styles
 
     nav{
+        margin-top: 10px;
         width: 100%;
         height: 10vh;
         display: flex;
@@ -101,8 +109,10 @@ table {
     }
 
     .pc-nav{
+        margin-top: 10px;
         display: none;
        .centre{
+        padding-top: 10px;
         ul{
             a{
                 color: brown;
@@ -119,13 +129,14 @@ table {
 
 // WHY US STYLES
 
+
 .why{
     padding: 3rem 0;
     width: 100%;
     display: flex;
     align-items: center;
 
-    .container{ 
+    .container{  
         .row{
             .US{
                 img{
@@ -138,8 +149,8 @@ table {
                     justify-content: space-around;
                     margin-top: -2rem;
                     .card{
-                        height: 8rem;
-                        width: 9rem;
+                        height: 10rem;
+                        width: 12rem;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -224,9 +235,7 @@ table {
     }
 
 
-
 // PROJECTS STYLES
-
 
 #projects{
     padding: 3rem 0;
@@ -234,12 +243,12 @@ table {
 
     .container{
         .row{
-            
+            background-color: pink;
             .text-container{
                 display: flex;
                 background-color: brown;
                 flex-direction: column;
-                gap: 3rem;
+                gap: 2rem;
                 padding: 50px;
             
             p{
@@ -262,46 +271,38 @@ table {
             
             }
             .image-container{
-
+                 padding: 0px;
+                // background: blue;
                  .images{
-                    transition: all 2s ease-in-out;
                     //                 background: dimgray;
                     p{
                         font-size: 20px;
                     }
                  }
-                .images :hover{
-                    transition: all 2s;
-                    scale: 1.06;
-                    color: brown;
-                    font-size: 30px;
-                    font-weight: bold;
-                     background-color: rgb(70, 67, 67);
-                    background-blend-mode: overlay;
-                     transition: all 2s ease-in-out;
-                     transform: translateY(-20px);
-                     border: 3px solid;
-                     border-radius: 10%;
+                // .images :hover{
+                //     transition: all 2s;
+                //     scale: 1.06;
+                //     color: brown;
+                //     font-size: 30px;
+                //     font-weight: bold;
+                //      background-color: rgb(70, 67, 67);
+                //     background-blend-mode: overlay;
                     
 
-                    p{
-                        background-color: transparent;
-                        color: brown;
-                        border: none;
-                        display: flex;
-                        align-self: center;
-                        font-size: 30PX;
-                        font-weight: bold;
-                       transition: ease-in 3s;
-                        transform: translateY(-120);
+                //     p{
+                //         background-color: transparent;
+                //         color: brown;
+                //         display: flex;
+                //         align-self: center;
                         
                 
-                    }
-                    img:hover{
-                        transition: all ease-in-out 2s;
-                    }
-                }
+                //     }
+                // }
 .images{ display: flex;
+
+    
+
+
     
 .image-text1{
     color: white;
@@ -310,10 +311,9 @@ table {
     justify-content: end;
     align-items: baseline;
     text-align: start;
-     width: 250px;
-     height: 240px;
+     width: 70vw;
+     height: 40vh;
      border: 1px solid brown;
-     transition: all ease-in-out 2s;
     background-size: cover;
     background-image: url("../images/project\ 1.jpg");
 
@@ -330,9 +330,8 @@ table {
     justify-content: end;
     align-items: baseline;
     text-align: start;
-    transition: all ease-in-out 2s;
-    width: 250px;
-     height: 240px;
+    width: 70vw;
+     height: 40vh;
      border: 1px solid brown;
     background-size: cover;
     background-image: url("../images/project\ 2.jpg");
@@ -349,9 +348,8 @@ table {
     justify-content: end;
     align-items: baseline;
     text-align: start;
-     width: 250px;
-     height: 240px;
-     transition: all ease-in-out 2s;
+     width: 70vw;
+     height: 40vh;
      border: 1px solid brown;
     background-size: cover;
     background-image: url("../images/project\ 3.jpg"); 
@@ -369,9 +367,8 @@ table {
     justify-content: end;
     align-items: baseline;
     text-align: start;
-    width: 250px;
-    transition: all ease-in-out 2s;
-    height: 240px;
+    width: 60vw;
+    height: 40vh;
     background-size: cover;
     border: 1px solid brown;
     background-image: url("../images/project\ 4.jpg");
@@ -387,11 +384,10 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    transition: all ease-in-out 2s;
     align-items: baseline;
     text-align: start;
-     width: 250px;
-     height: 240px;
+     width: 60vw;
+     height: 40vh;
     background-size: cover;
     border: 1px solid brown;
     background-image: url("../images/project\ 5.jpg");
@@ -410,8 +406,8 @@ table {
     justify-content: end;
     align-items: baseline;
     text-align: start;
-     width: 250px; transition: all ease-in-out 2s;
-    height: 240px;
+     width: 60vw;
+    height: 40vh;
     background-size: cover;
     background-image: url("../images/project\ 6.jpg");
      border: 1px solid brown;
@@ -421,6 +417,7 @@ table {
         padding-left: 5px;
     }
                     }
+
                 }
             }
         }
@@ -436,20 +433,24 @@ table {
     background-size: cover;
     background-repeat: no-repeat;
     height: 50vh;
+    width: 100%;
     margin-top: 5%;
     .overlay{
+
+        
        .donate-text{
- h2{ font-size: 30px; 
-    font-weight: 900;
-     width: 50%;
-    padding-bottom: 3%;}
+ .you{ font-size: 35px; 
+    font-weight: bold;
+     width: 45%;
+    padding-bottom: 8%;
+}
        }
         background-color: rgba(0,0,0,0.682);
         height: 100%;
         color: white;
         flex-direction: column;
         display: flex;
-        padding: 30px;
+        // padding: 30px ;
         justify-content: space-around;
 .donate-buttons{
     display: flex;
@@ -461,14 +462,11 @@ table {
             padding: 20px;
             border: 2px white solid;
             color: white;
-            width: 100%;
+            width: 35%;
             
         }
 
-        // input:hover{
-        //     transition: all .4s;
-        //     scale: 1.05;
-        // }
+       
 
         button{
             // height: 3rem;
@@ -500,7 +498,7 @@ table {
         .lorem{
          text-align: center;
     p{
-        font-size:20p ;
+        font-size:20px ;
         line-height: 1.5rem;
     }
             // line-height: 2rem;
@@ -519,48 +517,57 @@ table {
 
 
 
-
+// footer styles
 
 .footer{
+    display: flex;
     background-color: brown;
     .container{
         color: white;
-        padding: 50px;
+        padding: 30px ;
+        display: flex;
+        justify-content: space-around;
         .row{
+    
+            display: flex;
+            justify-content: space-around;
             .alicia{
-                .footer-text{
                 
+                .footer-text{
+                   width: 100%;
                     p{
-                        font-size: 20px;
+                         font-size: 20px;
                         line-height: 1.5rem;
-                        width: 80%;
+                        width: 85%;
+                        opacity: 75%;
                     }
                 }
 
             .dots-container{
-                display: flex;
-                gap: 30px;
+                // display: flex;
+                gap: 15px;
                  padding-top: 5px;
                   .licia{
-                    column-gap: 30px;
+                    //column-gap: 30px;
                     padding-top: 10px;
                     
-                    
+                    .footer-text{
+                        p{width: 100%;}
+                    }
                     .footer-dots{
                     padding-bottom: 10px;
-                        #donate{
-                            padding-left: 90px;
-                        }
+                      
+                    p{font-size: 20px;}
+                        
                         gap: 5px;
                         align-items: center;
-                        //  background-color: aqua;
                         display: flex;
                         .dot{
-                          height: 9px;  
-                         width: 9px;
+                          height: 20px;  
+                         width: 20px;
                          border-radius: 50%;
                           background-color: black;
-                          border:3px solid white;
+                          border:6px solid white;
                         }
                      }
                  }
@@ -571,8 +578,9 @@ table {
         }
 
         .links{ gap: 20px;
+            padding-top: 20px;
             // padding-left: 100px;
-                             a{
+                             a{font-size: 20px;
                                 display: flex;
                                 flex-direction: column;
                                  padding-bottom: 10px;
@@ -589,18 +597,21 @@ table {
                     }
             
                         .join{ 
+                            padding-top: 20px;
                             h3{
                                  font-size: 25px;
                                  font-weight: 700;
                                 padding-bottom: 20px;
                         }
                              img{
-                              height: 90px;
+                              height: 60px;
+                             width: 70px;
                             
                             }
                     }
             
                 }
+                
     }
 
 /*
@@ -634,6 +645,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .banner{
         background-image: url("../images/banner.jpg");
     background-size: cover;
+    height: 100vh;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
 
@@ -642,25 +654,28 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         }
 
         .container{
+            padding-top: 10px;
             width: 100%;
-            height: 15vh;
+            // height: 20vh;
             align-content: center;
 
             .pc-nav{
                 display: block;
                 display: flex;
+                height: 8vh;
+                width: 100%;
                 // position: fixed;
                 background: white;
-                height: fit-content;
+            
     
                 .nav-icons{
-                    width: 3rem;
-                    height: 3rem;
+                    width: 4rem;
+                    height: 100%;
                     background: brown;
                 }
     
                 .center{
-                    width: 80%;
+                    width: 100%;
     
                     ul{
                         display: flex;
@@ -674,7 +689,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                             color:brown;
 
                             img{
-                                height: 2rem;
+                                height: 3rem;
                             }
                         }
                     }
@@ -683,10 +698,157 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         }
     }
 
+    .why{
+        .container{
+            padding: 4rem 0;
+            .row{
+                gap: 0px;
+               .US{
+
+               img{
+                height: 55vh;
+               } 
+                .why-us{
+                    .card:hover{
+                        transition: 2s;
+                       scale: 1.2;
+                       background-color: white ;
+                      color: brown;
+                      border-radius: 3px;
+                      border: 2px solid brown;
+                      
+                     p{
+                      color: brown;
+                     }
+                  
+                          } // margin-top: -2rem;
+                }
+                .TEXT{
+                    padding-top: 0rem;
+                }
+               } 
+            }
+        }
+    }
+
+    #projects{
+        //background-color: black;
+        .container{
+            padding: 50px 0;
+        .row{
+            background-color: pink;
+            height: 70vh;
+            .text-container{
+                .text{
+
+                    .me{
+                        padding-bottom: 2rem;
+                    }
+                }
+            }
+
+            .image-container{
+             
+             .images{
+                   transition: all 2s ease-in-out;
+                   //                 background: dimgray;
+                   p{
+                       font-size: 20px;
+                   }
+                }
+               .images :hover{
+                   transition: all 2s;
+                   scale: 1.06;
+                   color: brown;
+                   font-size: 30px;
+                   font-weight: bold;
+                    background-color: rgb(70, 67, 67);
+                   background-blend-mode: overlay;
+                    transition: all 2s ease-in-out;
+                    transform: translateY(-20px);
+                    border: 3px solid;
+                    border-radius: 10%;
+                   
+
+                   p{
+                       background-color: transparent;
+                       color: brown;
+                       border: none;
+                       display: flex;
+                       align-self: center;
+                       font-size: 30PX;
+                       font-weight: bold;
+                      transition: ease-in 3s;
+                       transform: translateY(-120);
+                       
+               
+                   }
+                   img:hover{
+                       transition: all ease-in-out 2s;
+                   }
+               }
+            }
+        }
+
+    }
+    }
+.donate{
+    margin: 2rem 0;
+    height: 90vh;
+
+    .donate-text{
+        .you{
+
+     width: 45%;
+            
+        }
+    }
+
+    input{
+        height: 3rem;
+        background-color: transparent;
+        padding: 20px;
+        border: 3px white solid;
+        color: white;
+
+        width: 35%;
+        
+     }
+}
+
+.TEXT{
+    margin: 60px 0;
+    .container{
+        padding: 5rem;
+    }
+}
 
 
-
-
+.footer{
+    margin-top: 8rem;
+    .footer-text{
+       padding-top: 20px; 
+    }
+    .dots-container{
+        display: flex;
+    .footer-dots{
+        padding-bottom: 10px;
+          
+        p{font-size: 20px;}
+            
+            gap: 5px;
+            align-items: center;
+            display: flex;
+            .dot{
+              height: 18px;  
+             width: 18px;
+             border-radius: 50%;
+              background-color: black;
+              border:6px solid white;
+            }
+         }
+        }
+}
 }
 
 /* Large devices (desktops, 992px and up) */
