@@ -1,12 +1,5 @@
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-// @font-face {
-//     font-family: "jost";
-//     src: url("../Jost/static/Jost-LightItalic.ttf");
-// }
+
 
 @font-face {
     font-family: "jost";
@@ -58,8 +51,8 @@ table {
 }
 body{
     font-family: 'jost';
-    font-size: 20px;
-    font-weight: 500;
+    //font-size: 20px;
+    //font-weight: 500;
 }
 
 
@@ -116,8 +109,8 @@ body{
         ul{
             a{
                 color: brown;
-                font-size: 20px;
-                font-weight: 600;
+               // font-size: 20px;
+                //font-weight: 600;
             }
             a:hover{
                 
@@ -177,7 +170,7 @@ body{
                         }
                         p{
                              color: white;
-                            font-weight: 800;
+                            //font-weight: 800;
                         }
                     }
                 }

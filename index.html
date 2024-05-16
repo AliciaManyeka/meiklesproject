@@ -12,12 +12,42 @@
     <section class="banner">
         <div class="container">
             <nav class="mobile-nav">
-                <img class="img-fluid"  src="./images/logo.jpg" alt="">
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
+               
+                <nav class="navbar bg-body-tertiary fixed-top">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"> <img class="img-fluid"  src="./images/logo.jpg" alt=""></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="img-fluid"  src="./images/logo.jpg" alt=""></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">About </a>
+                              </li>
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Donations</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Projects & New</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Events</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                              </li>
+                        
+                          </ul>
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
             </nav>
 
             <!-- <div class="container"> -->
@@ -144,10 +174,9 @@
 <section id="event" class="TEXT">
   <div class="container">
     <div class="lorem">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, explicabo fuga? Accusantium laborum maxime aut sed dignissimos sequi iure sunt iusto molestiae aspernatur commodi suscipit ipsa optio corrupti enim impedit voluptatum consectetur omnis, recusandae nemo voluptatem tempore cum. Error magni eligendi quidem sed aperiam, a nostrum nobis quaerat ducimus, earum non enim pariatur iste inventore esse aliquam deserunt omnis aliquid ipsa repellat. Consequuntur quod aliquid nulla deleniti obcaecati odio laudantium, odit quo, quidem esse distinctio architecto eaque debitis cupiditate voluptatum, soluta vitae natus cum nemo quam consequatur molestias repellat. Autem eligendi obcaecati voluptatem, quam cupiditate unde consectetur repellat! Aperiam esse iure perferendis minus, reprehenderit 
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, explicabo fuga? Accusantium laborum maxime aut sed dignissimos sequi iure sunt iusto molestiae aspernatur commodi suscipit ipsa optio corrupti enim impedit voluptatum consectetur omnis, recusandae nemo voluptatem tempore cum. Error magni eligendi quidem sed aperiam, a nostrum nobis quaerat ducimus, earum non enim pariatur iste inventore esse aliquam deserunt omnis aliquid ipsa repellat. Consequuntur quod aliquid nulla deleniti obcaecati odio laudantium, odit quo, quidem esse distinctio 
             
-            oribus tenetur eius maiores ea odit provident minima dolor voluptates corporis tempore aliquid. Repellat unde temporibus ea, magnam porro quae inventore laborum placeat doloremque tempora quia harum minus error cumque assumenda vitae rerum. Mollitia, maxime. Accusamus maiores ad ab rerum corporis temporibus voluptas repellendus velit!
-            odio dol
+      
         </p>
             </div>
             <div class="lorem-heading">
@@ -224,6 +253,6 @@
 
             </div>
             </div>
-        
+        <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     
     </section>
